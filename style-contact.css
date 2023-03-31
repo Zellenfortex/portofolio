@@ -1,0 +1,144 @@
+* {
+	font-family: Arial;
+}
+
+body {
+	background-image: url("photos/1.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#c-act {
+	width: 100%;
+	position: relative;
+}
+
+form {
+	color: white;
+	max-width: 550px;
+	width: 100%;
+	background: linear-gradient(to top, rgb(24, 62, 65), rgb(31, 31, 31));
+	margin: 4vh auto 0 auto;
+	padding: 70px;
+	border-radius: 80px;
+	box-sizing: content-box;
+	box-shadow: 5px 5px rgb(58, 58, 58);
+}
+
+h1 {
+	font-weight: bolder;
+	font-size: 60px;
+	margin: 0;
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin: 20px 0;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	background-color: rgb(24, 62, 65);
+	box-sizing: border-box;
+	outline: none;
+	resize: none;
+	border: none;
+	border-bottom: 3px solid #8199e6;
+}
+
+input[type="text"]:focus, textarea:focus {
+	border-bottom: 3px solid rgb(0, 17, 248);
+}
+
+textarea::-webkit-scrollbar {
+	width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background-color: rgb(255, 0, 106);
+}
+
+.center {
+	text-align: center;
+}
+
+input[type="submit"] {
+	margin-top: 30px;
+	width: 90%;
+	max-width: 200px;
+	background: linear-gradient(to left, rgb(139, 139, 139), rgb(24, 62, 65));
+	color: rgb(255, 255, 255);
+	font-size: 17px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.error {
+	color: rgb(255, 0, 0);
+}
+
+.error-border {
+	border-bottom: 1px solid red;
+}
+
+#success {
+	color: #28A745;
+}
+
+nav {
+	font-weight: 600;
+	display: flex;
+	padding: 1% 2%;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+}
+
+nav img {
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px);
+	transition-duration: 0.3s;
+	width: 210px;
+}
+
+nav img:hover, nav img:focus, nav img:active {
+	transform: translateY(8px);
+}
+
+.nav-links {
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 6px 23px;
+	position: relative;
+}
+
+.nav-links ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.nav-links ul li::after {
+	content: '';
+	width: 0%;
+	height: 2.5px;
+	background: #15a9ff;
+	display: block;
+	margin: auto;
+	transition: 0.3s;
+}
+
+.nav-links ul li:hover::after {
+	width: 100%;
+}

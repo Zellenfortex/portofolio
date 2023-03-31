@@ -1,0 +1,383 @@
+html {
+	scroll-behavior: smooth;
+}
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+/* Index HTML*/
+
+@keyframes transitionHome {
+	from {
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+
+.header {
+	animation: transitionHome 0.3s;
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(photos/1.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Rainbow ↓ */
+.section-header-main{
+	height: 20px;
+	animation: colorsec infinite 2s;
+}
+@keyframes colorsec{
+	0%
+	{
+		background: red;
+	}
+	10%
+	{
+		background: #ff8000;
+	}
+	20%
+	{
+		background: #ffff00;
+	}
+	30%
+	{
+		background: #40ff00;
+	}
+	40%
+	{
+		background: #00ffff;
+	}
+	50%
+	{
+		background: #00bfff;
+	}
+	60%
+	{
+		background: #0040ff;
+	}
+	70%
+	{
+		background: #8000ff;
+	}
+	80%
+	{
+        	background: #ff00ff;
+	}
+	90%
+	{
+		background: #ff0080;
+	}
+	100%
+	{
+		background: #ff8000;
+	}
+ } 
+/* Rainbow ↑ */
+
+
+/* Curriculum vitae ↓ Index */
+
+.cv{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.cv h1{
+	color: white;
+	font-size: 46px;
+}
+.cv p{
+	color: rgb(167, 167, 167);
+	font-size: 26px;
+	line-height: 24px;
+	padding: 10px;
+}
+.cv-col{
+	margin: 5%;
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between; 
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.cv-text{
+	flex-basis: 31%;
+	background: rgb(163, 255, 163);
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+.cv-text:hover{
+	box-shadow: 0 0 20px 0px white;
+}
+
+.cv-text a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+.cv-text p{
+	color: rgb(255, 255, 255);
+}
+.cv h2{
+	text-align: center;
+	font-size: 31px;
+	margin: 10px 0;
+}
+.cv h3{
+	text-align: center;
+	font-size: 25px;
+}
+
+.cv-text {
+	background: url(photos/2.png) no-repeat;
+	background-size: cover;
+	/*width: 100%;
+	height: 100%;*/
+	position: relative;
+}
+.cv {
+	background: url(photos/301678.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	min-height: 886px;
+	position: relative;
+	overflow: hidden;
+}
+sub{
+	color: rgb(255, 125, 125);
+	font-size: 13px;
+}
+#space{
+	padding-top: 35px;
+}
+/* Curriculum vitae ↑ */
+
+
+/* Navigation bar ↓ */
+ nav {
+	font-weight: 600;
+	display: flex;
+	padding: 1% 2%;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	width: 95%;
+    
+}
+
+nav img {
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px);
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	width: 210px; 
+}
+nav img:hover, nav img:focus, nav img:active {
+	transform: translateY(8px);
+}
+ .nav-links {
+	flex: 1;
+	text-align: right;
+ }
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 6px 23px;
+	position: relative;
+}
+.nav-links ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+.nav-links ul li::after {
+	content: '';
+	width: 0%;
+	height: 2.5px;
+	background: #15a9ff;
+	display: block;
+	margin: auto;
+	transition: 0.3s;
+}
+.nav-links ul li:hover::after {
+	width: 100%;
+}
+/* Navigation bar ↑ */
+
+.text-box {
+	width: 90%;
+ 	color: rgb(255, 255, 255);
+ 	position: absolute;
+	top: 31%;
+  	left: 50%;
+   	transform: translate(-50%, -31%);
+   	text-align: center;
+}
+
+.text-box h1 {
+ 	position: relative;
+	font-size: 120px;
+}
+.text-box p{
+	font-size: 70px;
+}
+.scroll-to-visit{
+    	display: inline-block;
+    	text-decoration: none;
+    	color: #fff;
+    	border: 3px solid rgb(255, 255, 255);
+    	padding: 12px 34px;
+    	font-size: 17px;
+    	background: transparent;
+    	position: relative;
+	cursor: pointer;
+ }
+ .scroll-to-visit:hover{
+     	box-shadow: 0 0 6px 0 aqua;
+     	border: 3px solid aqua;
+     	background: aqua;
+     	color: rgb(0, 0, 0);
+     	transition: 0.5s;
+
+ }
+
+#nush {
+    	margin: auto;
+    	text-align: center;
+    	margin-top: 80px;
+    	margin-bottom: 80px;
+}
+.container {
+    	margin: auto;
+    	box-sizing: border-box;
+    	width: 60%;
+    	border-radius: 10px;
+    	background-color: rgb(122, 122, 122);
+  }
+#nush h1{
+    	padding-bottom: 10px;
+}
+
+.skills {
+    	text-align: right;
+    	padding: 10px;
+    	border-radius: 10px;
+}
+  
+.html {width: 60%; background-color: black;}
+.css {width: 30%; background-color: #000000;}
+.js {width: 15%; background-color: black;}
+.photoshop {width: 80%; background-color: black;}
+.af{width: 20%; background-color: black;}
+
+footer{
+    	background-image: linear-gradient(180deg, rgb(41, 41, 41), rgb(58, 58, 58));
+    	/*background-color:  rgb(41, 41, 41);*/
+    	text-align: center;
+    	padding-top: 55px;
+    	padding-bottom: 30px;
+    	padding-left: 20px;
+    	color: white;
+}
+.top{
+    	display: inline-block;
+    	text-decoration: none;
+    	color: #fff;
+    	border: 3px solid rgb(255, 255, 255);
+    	padding: 12px 34px;
+    	font-size: 17px;
+    	background: transparent;
+    	position: relative;
+    	cursor: pointer;
+}
+.top:hover{
+    	box-shadow: 0 0 23px 0 rgb(255, 0, 0);
+    	border: 3px solid rgb(255, 0, 0);
+    	background: rgb(243, 10, 10);
+    	color: rgb(0, 0, 0);
+    	transition: 0.5s;
+}
+#autor{
+    	padding-top: 30px;
+}
+#cr{
+    	color: gray;
+    	padding-top: 20px;
+    	text-align: left;
+}
+
+
+
+#social {
+    	padding-top: 10px;
+    	text-align: center;
+}
+#social a {
+   	list-style: none;
+   	display: inline-block;
+   	padding: 6px 23px;
+   	position: relative;
+   	font-size: 40px;
+}
+.linkedin{
+    	color: white;
+    	transition: 0.3s;
+}
+.linkedin:hover{
+    	color: grey;
+}
+
+/* ABOUT.HTML */
+
+
+.aboutme {
+    	width: 50%;
+    	position: absolute;
+    	top: 20%;
+    	left: 22%;
+    	text-align: center;
+    	border-radius: 10px;
+    	transition-duration: 0.7s;
+}
+.aboutme:hover, .aboutme:focus, .aboutme:active {
+    	transform: scale(1.08);
+}
+
+.me{
+    	background: rgb(137, 8, 250);
+    	padding: 2em;
+    	padding-bottom: 3em;
+    	border-radius: 10px;
+    	width: 100%;
+    
+}
+.me h1{
+    	font-family: Verdana;
+    	background-image: linear-gradient(180deg, rgb(102, 232, 255), rgb(255, 255, 255));
+    	-webkit-background-clip: text;
+    	background-clip: text; 
+    	color: transparent;
+    	margin: 0;
+    	font-size: 95px;
+    	padding-bottom: 20px;
+}
+.me p{
+    	color: black;
+    	font-size: 1.5rem;
+}
+

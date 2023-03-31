@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<link rel="stylesheet" href="index.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style-contact.css">
+<title>Contact</title>
+
+
+<body>
+
+<section class="header">
+
+<nav>
+	<a href="index.html"><img src="photos/logoo.png"></a>
+<div class="nav-links">
+<ul>
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</div>
+</nav>
+
+<section>
+
+<div id="c-act">
+<form onsubmit="event.preventDefault(); validateForm()">
+	<h1>Contact Me</h1>
+	<label for="name">Name:</label>
+	<input type="text" id="name" placeholder="Your name">
+	<small class="error"></small>
+	<label for="email">Email:</label>
+	<input type="text" id="email" placeholder="Your email">
+	<small class="error"></small>
+	<label for="message">Message:</label>
+	<textarea id="message" placeholder="Your message" rows="6"></textarea>
+	<small class="error"></small>
+
+<div class="center">
+	<input type="submit" value="Send Message">
+	<p id="success"></p>
+	</div>
+</form>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
